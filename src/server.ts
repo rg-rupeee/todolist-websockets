@@ -1,6 +1,7 @@
 import app from "./app";
 import * as http from "http";
 import init from "./socket";
+import * as db from "./database";
 
 const port = 5000 || process.env.PORT;
 
@@ -22,3 +23,5 @@ server.on("listening", function onListening() {
 init(server);
 
 server.listen(port);
+
+db.connectDB();
