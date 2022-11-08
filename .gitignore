@@ -1,0 +1,11 @@
+.idea/
+node_modules/
+built/
+dist/
+# .vscode/
+.vs/
+.env
+.env.production
+.env.development
+.DS_Store
+.vs/
